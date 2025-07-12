@@ -31,6 +31,57 @@ This is an **AI-powered travel planner** that helps you design detailed trip pla
 
 ---
 
+## 🗂️ Folder Structure
+
+```
+AI-Trip-Planner/
+│
+├── main.py                          # FastAPI backend entry point
+├── streamlit_app.py                 # Streamlit frontend entry point
+├── README.md                        # Project documentation
+├── requirements.txt                 # Python dependencies
+├── .env                             # Environment variables (API keys)
+├── setup.py                         # Project setup or uv installation guide
+├── .gitignore                       # Files/folders to ignore by Git
+├── .python-version                  # Python version pinned via uv
+├── pyproject.toml                   # Project metadata and config
+├── react_graph.png                  # LangGraph flow diagram
+│
+├── agent/
+│   ├── __init__.py                  # Init file for modular imports
+│   └── agentic_workflow.py          # LangGraph workflow logic
+│
+├── config/
+│   ├── __init__.py                  # Init file for modular imports
+│   └── config.yaml                  # LLM & model configuration
+│
+├── notebook/
+│   └── experiments.ipynb            # Jupyter notebook for testing and prototyping
+│
+├── prompt_library/
+│   ├── __init__.py                  # Init file for modular imports
+│   └── prompt.py                    # System prompts for LLM guidance
+│
+├── tools/
+│   ├── __init__.py
+│   ├── arithmetic_operation_tool.py # Math utilities (add, multiply)
+│   ├── currency_conversion_tool.py  # Currency conversion tool using APIs
+│   ├── expense_calculator_tool.py   # Budget and expense breakdown tools
+│   ├── place_search_tool.py         # Search tool (Tavily, Google Places)
+│   └── weather_info_tool.py         # Weather tool (OpenWeather API)
+│
+└── utils/
+    ├── __init__.py
+    ├── config_loader.py             # Load YAML configs
+    ├── currency_converter.py        # Core logic for exchange rate
+    ├── expense_calculator.py        # Core logic for budgeting
+    ├── model_loader.py              # Load OpenAI, Groq, DeepSeek, etc.
+    ├── place_info_search.py         # Place search integration logic
+    └── weather_info.py              # Weather data integration
+```
+
+---
+
 ## 🧰 Setup Instructions
 
 1. **Clone the Repository**
