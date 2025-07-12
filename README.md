@@ -1,8 +1,13 @@
-# ✈️ AI Travel Planner Agentic Application
+# ✈️ AI Travel Planner - Agentic AI Application
 
 This is an **AI-powered travel planner** that helps you design detailed trip plans using live data and intelligent agents. It provides day-by-day itineraries, weather, places to visit, hotel and restaurant suggestions, budgeting, and more — all in one go!
 
+![AITravelPartner Banner](https://img.shields.io/badge/AI%20Travel%20Planner-Agentic%20AI%20Application-blue?style=for-the-badge)
 ---
+
+## 🎬 Demo
+
+![AI Travel Planner Demo](demo/ai-travel-planner-video.gif)
 
 ## 🚀 Features
 
