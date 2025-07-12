@@ -46,6 +46,7 @@ AI-Trip-Planner/
 ├── .python-version                  # Python version pinned via uv
 ├── pyproject.toml                   # Project metadata and config
 ├── react_graph.png                  # LangGraph flow diagram
+├── Dockerfile                       # Containerization of app
 │
 ├── agent/
 │   ├── __init__.py                  # Init file for modular imports
@@ -133,6 +134,12 @@ AI-Trip-Planner/
 ```
 Plan a 5-day budget trip to Goa with hotel suggestions, food, and activities
 ```
+
+---
+
+## 🚀 Deployment
+
+This project is containerized with Docker and deployed on Render for seamless scalability and easy deployment.
 
 ---
 
