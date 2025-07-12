@@ -22,7 +22,7 @@ class QueryRequest(BaseModel):
 async def query_travel_agent(query: QueryRequest):
     try:
         print(query)
-        graph = GraphBuilder(model_provider="openai")
+        graph = GraphBuilder(model_provider="groq")
         react_app = graph()
 
         # Creating graph and saving
