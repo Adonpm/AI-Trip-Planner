@@ -9,12 +9,26 @@ BASE_URL = "http://localhost:8000" # Backend endpoint
 st.set_page_config(
     page_title="AI Travel Planner",
     page_icon="🌍",
-    layout="centered",
-    initial_sidebar_state="expanded"
+    layout="centered"
 )
 
 # Title
-st.title("🌍 Travel Planner Agentic Application")
+st.markdown(
+    "<h1 style='text-align: center;'>✈️ AI Travel Planner</h1>",
+    unsafe_allow_html=True
+)
+
+# Technologies Used
+st.markdown("#### 🧰 Powered By")
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("🧠 **LLM Orchestrator:** LangGraph")
+    st.markdown("🌤️ **Live Weather:** [OpenWeatherMap](https://openweathermap.org/)")
+
+with col2:
+    st.markdown("📍 **Place Search:** Google Places & Tavily")
+    st.markdown("💱 **Currency Rates:** [ExchangeRate API](https://www.exchangerate-api.com/)")
 
 # Initialise chat history
 if "messages" not in st.session_state:
@@ -38,9 +52,9 @@ if submit_button and user_input.strip():
             answer = response.json().get("answer", "No answer returned")
 
             markdown_content = f'''
-            # 🌍 AI Travel Plan
+            # 🤖 AI Travel Plan
             # **Generated:** {datetime.datetime.now().strftime('%Y-%m-%d at %H:%M')}
-            # **Created by:** Adon's Travel Agent
+            # **Created by:** Adon's Agentic Application
             ---
             {answer}
             ---
