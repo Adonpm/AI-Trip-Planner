@@ -2,7 +2,7 @@
 
 This is an **AI-powered travel planner** that helps you design detailed trip plans using live data and intelligent agents. It provides day-by-day itineraries, weather, places to visit, hotel and restaurant suggestions, budgeting, and more — all in one go!
 
-![AITravelPartner Banner](https://img.shields.io/badge/AI%20Travel%20Planner-Agentic%20AI%20Application-blue?style=for-the-badge)
+![AITravelPlanner Banner](https://img.shields.io/badge/AI%20Travel%20Planner-Agentic%20AI%20Application-blue?style=for-the-badge)
 ---
 
 ## 🎬 Demo
