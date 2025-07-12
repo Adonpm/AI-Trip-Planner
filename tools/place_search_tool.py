@@ -19,10 +19,12 @@ class PlaceSearchTool:
         def search_attractions(place:str) -> str:
             '''Search top attractions of a place'''
             try:
+                print("Search attractions using Google Places API")
                 google_attraction_result = self.google_places_search.google_search_attractions(place)
                 if google_attraction_result:
                     return f"Following are the attractions of {place} as suggested by google: {google_attraction_result}"
             except Exception as e:
+                print("Search attractions using Tavily API")
                 tavily_attraction_result = self.tavily_search.tavily_search_attractions(place)
                 return f"Google cannot find the details due to {e}. \nFollowing are the attractions of {place}: {tavily_attraction_result}" ## Fallback search using tavily in case google places fail
             
@@ -30,10 +32,12 @@ class PlaceSearchTool:
         def search_restaurants(place:str) -> str:
             '''Search restaurants of a place'''
             try:
+                print("Search restaurants using Google Places API")
                 google_restaurants_result = self.google_places_search.google_search_restaurants(place)
                 if google_restaurants_result:
                     return f"Following are the restaurants of {place} as suggested by google: {google_restaurants_result}"
             except Exception as e:
+                print("Search restaurants using Tavily API")
                 tavily_restaurants_result = self.tavily_search.tavily_search_restaurants(place)
                 return f"Google cannot find the details due to {e}. \nFollowing are the restaurants of {place}: {tavily_restaurants_result}" ## Fallback search using tavily in case google places fail
 
@@ -41,10 +45,12 @@ class PlaceSearchTool:
         def search_activities(place:str) -> str:
             '''Search top activities of a place'''
             try:
+                print("Search activities using Google Places API")
                 google_activities_result = self.google_places_search.google_search_activity(place)
                 if google_activities_result:
                     return f"Following are the attractions of {place} as suggested by google: {google_activities_result}"
             except Exception as e:
+                print("Search activities using Tavily API")
                 tavily_activities_result = self.tavily_search.tavily_search_activity(place)
                 return f"Google cannot find the details due to {e}. \nFollowing are the activities of {place}: {tavily_activities_result}" ## Fallback search using tavily in case google places fail
             
@@ -52,10 +58,12 @@ class PlaceSearchTool:
         def search_transportation(place:str) -> str:
             '''Search different transportation modes of a place'''
             try:
+                print("Search transportation modes using Google Places API")
                 google_transportation_result = self.google_places_search.google_search_transportation(place)
                 if google_transportation_result:
                     return f"Following are the attractions of {place} as suggested by google: {google_transportation_result}"
             except Exception as e:
+                print("Search transportation modes using Tavily API")
                 tavily_transportation_result = self.tavily_search.tavily_search_transportation(place)
                 return f"Google cannot find the details due to {e}. \nFollowing are the transportation modes of {place}: {tavily_transportation_result}" ## Fallback search using tavily in case google places fail
             
