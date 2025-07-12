@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN uv pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Expose ports
 EXPOSE 8000   
