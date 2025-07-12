@@ -35,9 +35,11 @@ class ModelLoader(BaseModel):
             os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
             model_name = self.config["llm"]["groq"]["model_name"]
             llm = ChatGroq(model = model_name)
+            print("Groq LLM Loaded successfully")
         elif self.model_provider == "openai":
             print("Loading LLM from OpenAI..............")
             os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
             model_name = self.config["llm"]["openai"]["model_name"]
             llm = ChatOpenAI(model = model_name)
+            print("OpenAI LLM Loaded successfully")
         return llm
